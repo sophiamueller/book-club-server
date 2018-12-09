@@ -4,11 +4,8 @@ module.exports = function(app) {
   // @see https://www.npmjs.com/package/cors#configuration-options
   app.use(
     cors({
-      origin: [
-        'http://localhost:3000',
-        'https://neuefische-todo-app.netlify.com',
-      ],
-      methods: ['OPTIONS', 'GET', 'POST', 'PATCH', 'DELETE'],
+      origin: ['http://localhost:3000', 'https://book-club.netlify.com'],
+      methods: ['OPTIONS', 'GET', 'POST', 'PATCH', 'DELETE']
     })
   )
 }
